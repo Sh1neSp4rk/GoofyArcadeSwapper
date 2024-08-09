@@ -1,4 +1,4 @@
-int inPins[9] ={0,1,2,3,4,5,6,7,8}; //set the pins for directional input
+int inPins[8] ={0,1,2,3,4,5,6,7,}; //set the pins for directional input
 int outPinsStandard[8] ={8,9,10,A0,A1,A2,A3,A4}; //set output pins for direction
 int outPinsGoofy[8] ={A1,A2,A3,A4,8,9,10,A0}; //sets flipped outputs when switch is on
 int switchPin = A5; //set the switch pin
@@ -23,7 +23,7 @@ void setup()
 void loop()
 {
   //check each pin
-  for (int i = 0; i < 8; ++i) {
+  for (int i = 0; i < 7; ++i) {
     //Checks the state of the current pin
     pinState = digitalRead(inPins[i]); 
     //checks if the switch is flipped   
